@@ -1,3 +1,5 @@
-import Home from './Home/home';
+import Home from './home/Home';
+import About from './about/About';
+import Projects from './gallery/Projects';
 
-export { Home };
+export { Home, About, Projects };

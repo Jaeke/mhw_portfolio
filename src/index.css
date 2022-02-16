@@ -1,8 +1,11 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -20,14 +23,18 @@ code {
 }
 
 :root {
-  --primary-dark:#0D0C1D;
-  --primary-light: #EFFFFA;
-  --primary-hover: #343078;
-  --color-cream: #FAF8F2;
-  --color-white: #FFFFFF;
-  --text-darkgray: #484A4D;
-  --text-drakgray-light: rgba(72, 74, 77, 0.6)
-  --text-slategray: #6B6B6B;
-  --text-lightgray: #999999;
+  --content-height: 100vh;
+  --content-width: 100vw;
   --mobile-size: 576px;
+  --bg-light: #f1f1f1;
+  --color-cream: #faf8f2;
+  --color-white: #ffffff;
+  --color-faded-gray: rgba(72, 74, 77, 0.6)
+  --color-inner-gold: #D0B783;
+  --color-outer-gold: #E0D0AE;
+  --text-dark-gray: #484A4D;
+  --text-slate-gray: #6B6B6B;
+  --text-light-gray: #999999;
+  --overlay-light-gray: rgba(153, 153, 153, 0.7);
+  --overlay-dark-gray: rgba(72, 74, 77, 0.75)
 }
