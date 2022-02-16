@@ -1,5 +1,5 @@
 .drawer-container {
-  --transition-speed: 0.8s;
+  --transition-speed: 0.5s;
 }
 
 .drawer {
@@ -9,7 +9,7 @@
   overflow: auto;
   position: fixed;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  transition: transform var(--transition-speed) ease;
+  transition: transform var(--transition-speed) ease-out;
   z-index: 1000;
   margin: 0;
   padding: 0;
