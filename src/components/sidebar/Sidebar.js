@@ -1,19 +1,26 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import { Envelope, LinkedinLogo, InstagramLogo } from 'phosphor-react';
 
 import './Sidebar.style.scss';
+import { uiActions } from '../../store/UI/ui-slice';
 
 const Sidebar = () => {
+  const dispatch = useDispatch();
+
+  const setDrawerHandler = () => {
+    dispatch(uiActions.setSideDrawerVisible());
+  };
+
   return (
     <div className="sidebar_hidden">
-      <NavLink className="logo_container" to="/">
+      <div className="logo_container" onClick={setDrawerHandler}>
         <img
           className="brand_logo"
           src="/images/mhwLogo.png"
           alt="brand logo"
         />
-      </NavLink>
+      </div>
       <div className="menu_text">
         <span>menu</span>
       </div>

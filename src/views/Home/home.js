@@ -9,7 +9,9 @@ const Home = () => {
       <div className="sidebar_hidden">
         <Sidebar />
       </div>
-      <div className="home_content">This is home content</div>
+      <div className="home_content">
+        This is going to be a carousel for images
+      </div>
     </div>
   );
 };
