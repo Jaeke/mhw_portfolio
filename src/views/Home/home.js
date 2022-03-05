@@ -1,6 +1,6 @@
 import React from 'react';
-import { Sidebar } from '../../components';
 
+import { Sidebar, Slider } from '../../components';
 import './Home.style.scss';
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
         <Sidebar />
       </div>
       <div className="home_content">
-        This is going to be a carousel for images
+        <Slider />
       </div>
     </div>
   );

@@ -1,3 +1,22 @@
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo_container,
+.social_icons,
+.brand_header,
+.menu_text {
+  animation: opacity 1s ease-in;
+}
+
 .sidebar_hidden {
   display: flex;
   flex-direction: column;
@@ -7,6 +26,8 @@
   text-transform: uppercase;
   font-weight: 300;
   color: #d0b783;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  font-size: 14px;
 }
 
 .logo_container {
@@ -23,21 +44,29 @@
 }
 
 img.brand_logo {
-  width: 68px;
-  height: 90px;
+  width: 48px;
+  height: 60px;
   padding: 0;
-  // margin-right: 18px;
 }
 
 .menu_text {
   transform: rotate(-90deg);
   position: absolute;
-  top: 198px;
+  top: 160px;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+
+  &:hover {
+    color: var(--text-light-gray);
+  }
 }
 
 .brand_header {
+  position: absolute;
   transform: rotate(-90deg);
-  width: 150px;
+  width: 180px;
+  top: 50%;
+  cursor: default;
 }
 
 .social_icons {
@@ -46,11 +75,25 @@ img.brand_logo {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 250px;
-  bottom: 85px;
+  height: 160px;
+  bottom: 35px;
 }
 
 .icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 26px;
   color: #d0b783;
   cursor: pointer;
+  transition: 0.5s ease-in-out;
+  border-radius: 50%;
+
+  &:hover {
+    color: var(--text-light-gray);
+    background-color: var(--hover-container-gray);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+  }
 }

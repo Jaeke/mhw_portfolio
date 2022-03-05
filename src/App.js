@@ -2,7 +2,6 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import Routes from './routes';
-import SideDrawer from './components/Overlay/Drawer';
 import { uiActions } from './store/UI/ui-slice';
 
 function App() {
@@ -16,9 +15,6 @@ function App() {
 
   return (
     <div>
-      <SideDrawer isOpen={isDrawerOpen} onClose={() => setDrawerHandler()}>
-        <div>Hello there I am open!</div>
-      </SideDrawer>
       <Routes />
     </div>
   );

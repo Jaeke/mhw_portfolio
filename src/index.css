@@ -1,3 +1,6 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 html,
 body {
   margin: 0;
@@ -29,12 +32,17 @@ code {
   --bg-light: #f1f1f1;
   --color-cream: #faf8f2;
   --color-white: #ffffff;
+  --color-white-gray: #f8f8f8
   --color-faded-gray: rgba(72, 74, 77, 0.6)
   --color-inner-gold: #D0B783;
   --color-outer-gold: #E0D0AE;
   --text-dark-gray: #484A4D;
   --text-slate-gray: #6B6B6B;
   --text-light-gray: #999999;
-  --overlay-light-gray: rgba(153, 153, 153, 0.7);
+  --hover-container-gray: rgba(153, 153, 153, 0.123);
+  --overlay-light-gray: rgba(153, 153, 153, 0.404);
   --overlay-dark-gray: rgba(72, 74, 77, 0.75)
+  --animate: 2.5s;
+  --pause: 3s;
+  --totall-duration: calc(var(--animate) * 2 + var(--pause) * 2);
 }

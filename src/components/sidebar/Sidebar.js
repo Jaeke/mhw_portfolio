@@ -21,7 +21,7 @@ const Sidebar = () => {
           alt="brand logo"
         />
       </div>
-      <div className="menu_text">
+      <div className="menu_text" onClick={setDrawerHandler}>
         <span>menu</span>
       </div>
       <div className="brand_header">
@@ -29,13 +29,13 @@ const Sidebar = () => {
       </div>
       <div className="social_icons">
         <div className="icon">
-          <Envelope size={38} />
+          <Envelope />
         </div>
         <div className="icon">
-          <LinkedinLogo size={38} />
+          <LinkedinLogo />
         </div>
         <div className="icon">
-          <InstagramLogo size={38} />
+          <InstagramLogo />
         </div>
       </div>
     </div>
