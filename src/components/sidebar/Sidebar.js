@@ -1,9 +1,9 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { Envelope, LinkedinLogo, InstagramLogo } from 'phosphor-react';
 
 import './Sidebar.style.scss';
 import { uiActions } from '../../store/UI/ui-slice';
+import { Email, LinkedIn, Instagram } from './iconBtn';
 
 const Sidebar = () => {
   const dispatch = useDispatch();
@@ -28,15 +28,9 @@ const Sidebar = () => {
         <span>mhw studio | nyc</span>
       </div>
       <div className="social_icons">
-        <div className="icon">
-          <Envelope />
-        </div>
-        <div className="icon">
-          <LinkedinLogo />
-        </div>
-        <div className="icon">
-          <InstagramLogo />
-        </div>
+        <Email />
+        <LinkedIn />
+        <Instagram />
       </div>
     </div>
   );

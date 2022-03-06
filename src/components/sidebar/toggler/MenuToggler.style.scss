@@ -1,0 +1,25 @@
+.menu_button_container {
+  position: fixed;
+  height: 60px;
+  width: 20px;
+  bottom: 50%;
+  left: 1%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menuBar {
+  background-color: var(--text-light-gray);
+  height: 6px;
+  width: 15px;
+  transition: background-color 0.3s ease-in;
+
+  &:hover {
+    background-color: #e0d0ae;
+  }
+}
