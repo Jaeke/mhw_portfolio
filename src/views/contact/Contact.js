@@ -4,7 +4,7 @@ import { MenuToggler } from '../../components';
 const Contact = () => {
   return (
     <div>
-      <MenuToggler />
+      <MenuToggler contact={true} />
       <p>This is contact page</p>
     </div>
   );

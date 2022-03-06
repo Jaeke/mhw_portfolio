@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import './MenuToggler.style.scss';
 import { uiActions } from '../../../store/UI/ui-slice';
 
-const MenuToggler = () => {
+const MenuToggler = ({ home, projects, about, contact }) => {
   const dispatch = useDispatch();
 
   const onClickHandler = () => {
@@ -13,10 +13,10 @@ const MenuToggler = () => {
 
   return (
     <div className="menu_button_container" onClick={onClickHandler}>
-      <div className="menuBar home" />
-      <div className="menuBar projects" />
-      <div className="menuBar about" />
-      <div className="menuBar contact" />
+      <div className={home ? 'menuBar_home' : 'menuBar'} />
+      <div className={projects ? 'menuBar_projects' : 'menuBar'} />
+      <div className={about ? 'menuBar_about' : 'menuBar'} />
+      <div className={contact ? 'menuBar_contact' : 'menuBar'} />
     </div>
   );
 };

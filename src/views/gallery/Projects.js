@@ -6,7 +6,7 @@ import './Projects.style.scss';
 const Projects = () => {
   return (
     <div className="projects_container">
-      <MenuToggler />
+      <MenuToggler projects={true} />
       <h1>This is project gallery page</h1>
     </div>
   );

@@ -31,7 +31,7 @@ const ImgSlider = () => {
   const settings = {
     infinite: true,
     lazyload: true,
-    speed: 1000,
+    speed: 800,
     slideToShow: 1,
     centerMode: true,
     centerPadding: 50,

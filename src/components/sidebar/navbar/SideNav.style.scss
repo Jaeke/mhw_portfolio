@@ -32,12 +32,18 @@
 .navlink {
   text-decoration: none;
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: 2px;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
+
+  @media screen and (min-width: 1920px) {
+    //For Big TV's (HD Screens) and 27"
+
+    font-size: 18px;
+  }
 
   .hover_effect {
     position: absolute;
@@ -72,28 +78,48 @@
   height: 150px;
   position: absolute;
   left: 40px;
-  bottom: 8%;
+  bottom: 5%;
   display: flex;
   flex-direction: column;
   gap: 0;
+
+  @media screen and (min-width: 1920px) {
+    //For Big TV's (HD Screens) and 27"
+
+    bottom: 7%;
+
+    .studio_name {
+      font-size: 24px;
+    }
+
+    .studio_type {
+      font-size: 16px;
+    }
+
+    .contact_num {
+      font-size: 16px;
+    }
+  }
 }
 
 .studio_name {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 2px;
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 5px;
 }
 
 .studio_type {
   text-transform: capitalize;
   font-weight: 400;
+  font-size: 14px;
 }
 
 .contact_num {
   margin-top: 2px;
   font-weight: 400;
+  font-size: 14px;
 }
 
 // widget buttons styling
