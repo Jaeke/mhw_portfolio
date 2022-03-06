@@ -1,0 +1,48 @@
+.navlinks_container {
+  position: absolute;
+
+  width: 180px;
+  height: 200px;
+  top: 239px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navlink {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+
+  .hover_effect {
+    position: absolute;
+    height: 23px;
+    width: 0;
+    background-color: var(--color-outer-gold);
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+  }
+
+  .nav_text {
+    color: var(--text-slate-gray);
+    padding-left: 40px;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &:hover {
+    .nav_text {
+      color: #d0b783;
+    }
+
+    .hover_effect {
+      width: 24px;
+    }
+  }
+}

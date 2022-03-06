@@ -4,7 +4,7 @@
 
 .drawer {
   background: #fff;
-  width: 15%;
+  width: 342px;
   height: 100%;
   overflow: auto;
   position: fixed;
@@ -93,7 +93,7 @@
   from appearing on the edge of the screen when inactive
  */
 .drawer-container.open .drawer {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
 .drawer-container.in.open .backdrop {

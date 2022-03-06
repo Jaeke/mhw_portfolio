@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import Routes from './routes';
 import { uiActions } from './store/UI/ui-slice';
-import { Drawer } from './components';
+import { Drawer, SideNav } from './components';
 
 function App() {
   const dispatch = useDispatch();
@@ -17,7 +17,7 @@ function App() {
   return (
     <div>
       <Drawer isOpen={drawerOpen} onClose={() => setDrawerHandler()}>
-        <input />
+        <SideNav />
       </Drawer>
       <Routes />
     </div>

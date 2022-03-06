@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import cn from 'classnames';
-import FocusTrap from 'focus-trap-react';
 
 import './Drawer.style.scss';
 import useMountTransition from './overlay/useMountTransition';
@@ -74,7 +73,7 @@ const SideDrawer = ({
   }
 
   return createPortal(
-    <FocusTrap active={isOpen}>
+    <>
       <div
         aria-hidden={isOpen ? 'false' : 'true'}
         className={cn('drawer-container', {
@@ -88,7 +87,7 @@ const SideDrawer = ({
         </div>
         <div className="backdrop" onClick={onClose} />
       </div>
-    </FocusTrap>,
+    </>,
     portalRootRef.current
   );
 };

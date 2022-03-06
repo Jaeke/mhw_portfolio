@@ -39,7 +39,7 @@ code {
   --text-dark-gray: #484A4D;
   --text-slate-gray: #6B6B6B;
   --text-light-gray: #999999;
-  --hover-container-gray: rgba(153, 153, 153, 0.123);
+  --hover-container-gray: rgba(153, 153, 153, 0.08);
   --overlay-light-gray: rgba(153, 153, 153, 0.404);
   --overlay-dark-gray: rgba(72, 74, 77, 0.75)
   --animate: 2.5s;
