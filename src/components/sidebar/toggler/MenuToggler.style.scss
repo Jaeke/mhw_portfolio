@@ -15,42 +15,30 @@
 }
 
 .menu_button_container {
+  background-color: transparent;
   position: fixed;
+  padding-top: 16px;
   height: 70px;
   width: 20px;
   bottom: 50%;
-  padding-left: 18px;
+  left: 10px;
   z-index: 3;
+  border-radius: 3px;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 
-  .menuBar {
-    background-color: var(--text-light-gray);
-    height: 5px;
-    width: 10px;
-    transition: background-color 0.3s ease-in;
+  .menu_btn_text {
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #d0b783;
+    letter-spacing: 2px;
+    transition: color 0.4s ease-in;
 
     &:hover {
-      background-color: #e0d0ae;
-    }
-  }
-
-  .menuBar_home,
-  .menuBar_projects,
-  .menuBar_about,
-  .menuBar_contact {
-    background-color: var(--text-light-gray);
-    height: 5px;
-    width: 22px;
-    margin-left: 11px;
-    transition: background-color 0.3s ease-in;
-
-    &:hover {
-      background-color: #e0d0ae;
+      color: rgba(72, 74, 77, 0.6);
     }
   }
 }

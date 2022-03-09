@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { motion } from 'framer-motion';
 
 import './MenuToggler.style.scss';
 import { uiActions } from '../../../store/UI/ui-slice';
@@ -12,12 +13,21 @@ const MenuToggler = ({ home, projects, about, contact }) => {
   };
 
   return (
-    <div className="menu_button_container" onClick={onClickHandler}>
-      <div className={home ? 'menuBar_home' : 'menuBar'} />
-      <div className={projects ? 'menuBar_projects' : 'menuBar'} />
-      <div className={about ? 'menuBar_about' : 'menuBar'} />
-      <div className={contact ? 'menuBar_contact' : 'menuBar'} />
-    </div>
+    <motion.div
+      className="menu_button_container"
+      onClick={onClickHandler}
+      initial={{ x: '-20px', opacity: 0 }}
+      animate={{
+        x: '0px',
+        opacity: 1,
+      }}
+      transition={{
+        type: 'tween',
+        duration: 1,
+      }}
+    >
+      <p className="menu_btn_text">menu</p>
+    </motion.div>
   );
 };
 
