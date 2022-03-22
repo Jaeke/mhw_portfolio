@@ -69,8 +69,9 @@ img.brand_logo {
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
+  gap: 1px;
   align-items: center;
-  height: 165px;
+  height: 185px;
   bottom: 35px;
 }

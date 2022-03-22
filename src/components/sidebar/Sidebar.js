@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import './Sidebar.style.scss';
 import { uiActions } from '../../store/UI/ui-slice';
-import { Email, LinkedIn, Instagram } from './iconBtn';
+import { Email, LinkedIn, Instagram, Pinterest } from './iconBtn';
 
 const Sidebar = () => {
   const dispatch = useDispatch();
@@ -102,6 +102,20 @@ const Sidebar = () => {
           transition={{
             type: 'tween',
             duration: 1.6,
+          }}
+        >
+          <Pinterest />
+        </motion.div>
+
+        <motion.div
+          initial={{ x: '-200px', opacity: 0 }}
+          animate={{
+            x: '0px',
+            opacity: 1,
+          }}
+          transition={{
+            type: 'tween',
+            duration: 1.8,
           }}
         >
           <Instagram />

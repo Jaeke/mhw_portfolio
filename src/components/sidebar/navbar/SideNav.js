@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { uiActions } from '../../../store/UI/ui-slice';
-import { Email, Instagram, LinkedIn } from '../iconBtn';
+import { Email, Instagram, LinkedIn, Pinterest } from '../iconBtn';
 
 import './SideNav.style.scss';
 
@@ -52,6 +52,7 @@ const SideNav = () => {
       <div className="widgets_container">
         <Email />
         <LinkedIn />
+        <Pinterest />
         <Instagram />
       </div>
     </div>

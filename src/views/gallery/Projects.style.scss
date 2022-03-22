@@ -1,6 +1,9 @@
 .projects_container {
-  // background-color: red;
   width: 100vw;
   height: 100vh;
-  z-index: 1;
+  padding: 15px 20px 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
 }

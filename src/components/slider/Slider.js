@@ -3,9 +3,9 @@ import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import Slider from 'react-slick';
 
 import './Slider.style.scss';
-import montaukImage from '../../assets/montauk_house.jpeg';
-import flowerImage from '../../assets/flower_wine.jpeg';
-import retailImage from '../../assets/bike_jacket.jpeg';
+import montaukImage from '../../assets/homeSlider/montauk_house.jpeg';
+import flowerImage from '../../assets/homeSlider/flower_wine.jpeg';
+import retailImage from '../../assets/homeSlider/bike_jacket.jpeg';
 
 const Images = [montaukImage, flowerImage, retailImage];
 
