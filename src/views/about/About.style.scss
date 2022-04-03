@@ -1,0 +1,43 @@
+.about_page_container {
+  padding: 10px 40px 10px 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bio_picture {
+  height: 340px;
+  width: 340px;
+  position: absolute;
+  border-radius: 50%;
+  top: 25px;
+  right: 35px;
+  background-color: rgb(230, 215, 245);
+  // background-image: url('../../../public/images/portfolio_pic.PNG');
+  background-position: center;
+  background-size: cover;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322);
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322);
+  -o-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322);
+}
+
+.bio_container {
+  position: absolute;
+  padding: 5px;
+  top: 15px;
+  left: 20%;
+  // background-color: chocolate;
+}
+
+.bio_header {
+  position: relative;
+  font-size: 46px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.bio_content {
+  // background-color: burlywood;
+  margin-top: 20px;
+  width: 700px;
+  font-size: 20px;
+}

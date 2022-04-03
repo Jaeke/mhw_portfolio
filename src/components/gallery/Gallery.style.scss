@@ -29,7 +29,8 @@
   margin-bottom: 12px;
 
   &:hover {
-    filter: opacity(0.7);
+    // currently comment out because it is behaving weirdly
+    // filter: opacity(0.7);
 
     .img_title {
       transform: translateX(0);
