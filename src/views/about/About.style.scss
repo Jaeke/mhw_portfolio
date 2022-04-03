@@ -1,6 +1,7 @@
 .about_page_container {
   padding: 10px 40px 10px 40px;
   font-family: 'Montserrat', sans-serif;
+  color: var(--text-dark-gray);
 }
 
 .bio_picture {
@@ -10,7 +11,7 @@
   border-radius: 50%;
   top: 25px;
   right: 35px;
-  background-color: rgb(230, 215, 245);
+  background-color: rgb(83, 83, 83);
   // background-image: url('../../../public/images/portfolio_pic.PNG');
   background-position: center;
   background-size: cover;
@@ -40,4 +41,5 @@
   margin-top: 20px;
   width: 700px;
   font-size: 20px;
+  font-weight: 300;
 }
