@@ -5,9 +5,15 @@ import './IconBtn.style.scss';
 
 const Pinterest = () => {
   return (
-    <div className="icon" weight="regular">
+    <a
+      className="icon"
+      weight="regular"
+      href="https://www.pinterest.com/"
+      target={'_blank'}
+      rel="noreferrer"
+    >
       <PinterestLogo />
-    </div>
+    </a>
   );
 };
 

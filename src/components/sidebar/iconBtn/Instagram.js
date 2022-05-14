@@ -5,9 +5,15 @@ import './IconBtn.style.scss';
 
 const Instagram = () => {
   return (
-    <div className="icon" weight="thin">
+    <a
+      className="icon"
+      weight="thin"
+      href="https://instagram.com/mhwstudio?igshid=YmMyMTA2M2Y="
+      target={'_blank'}
+      rel="noreferrer"
+    >
       <InstagramLogo />
-    </div>
+    </a>
   );
 };
 

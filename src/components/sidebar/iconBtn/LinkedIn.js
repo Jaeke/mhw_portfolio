@@ -5,9 +5,14 @@ import './IconBtn.style.scss';
 
 const LinkedIn = () => {
   return (
-    <div className="icon">
+    <a
+      className="icon"
+      href="https://www.linkedin.com/in/mark-wesley-b34877112"
+      target={'_blank'}
+      rel="noreferrer"
+    >
       <LinkedinLogo />
-    </div>
+    </a>
   );
 };
 
