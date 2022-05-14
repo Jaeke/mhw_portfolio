@@ -108,20 +108,36 @@ const Gallery = () => {
           duration: 1,
         }}
       >
-        {imgData.map((item, i) => (
-          <div
-            className={`img_container`}
-            key={i}
-            onClick={() => {
-              getImg(item.imgSrc);
-            }}
-          >
-            <img className="image" src={item.imgSrc[0]} alt="individual img" />
-            <span key={i} className="img_title">
-              <span className="item_text">{item.group}</span>
-            </span>
-          </div>
-        ))}
+        <div className="gallery_inner">
+          {imgData.map((item, i) => (
+            <div
+              className={`img_container`}
+              key={i}
+              onClick={() => {
+                if (item.imgSrc.length > 1) {
+                  getImg(item.imgSrc);
+                }
+              }}
+            >
+              {item.imgSrc.length > 1 ? (
+                <img
+                  className="image"
+                  src={item.imgSrc[0]}
+                  alt="individual img"
+                />
+              ) : (
+                <div className="noImage_container">
+                  <span className="noImage_msg">coming soon</span>
+                  <span className="noImage_underline" />
+                </div>
+              )}
+
+              <span key={i} className="img_title">
+                <span className="item_text">{item.group}</span>
+              </span>
+            </div>
+          ))}
+        </div>
       </motion.div>
     </>
   );

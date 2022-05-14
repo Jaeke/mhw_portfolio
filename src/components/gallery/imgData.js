@@ -66,4 +66,24 @@ export const imgData = [
     group: 'floral',
     imgSrc: [FloralOne, FloralTwo, FloralThree, FloralFour, FloralFive],
   },
+  {
+    id: 5,
+    group: 'furniture',
+    imgSrc: [],
+  },
+  // {
+  //   id: 6,
+  //   group: 'furniture',
+  //   imgSrc: [],
+  // },
+  // {
+  //   id: 7,
+  //   group: 'furniture',
+  //   imgSrc: [],
+  // },
+  // {
+  //   id: 8,
+  //   group: 'furniture',
+  //   imgSrc: [],
+  // },
 ];
