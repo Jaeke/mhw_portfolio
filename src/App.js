@@ -22,7 +22,7 @@ function App() {
   };
 
   useEffect(() => {
-    console.log(width);
+    // console.log(width);
     window.addEventListener('resize', updateWidthAndHeight);
     return () => window.removeEventListener('resize', updateWidthAndHeight);
   }, []);
