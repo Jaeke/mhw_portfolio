@@ -14,9 +14,9 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
-  padding-left: 25px;
+  // padding-left: 25px;
   // background-color: red;
 }
 
@@ -66,6 +66,14 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300;
+}
+
+// Macbook 13" screen width
+@media (max-width: 1600px) {
+  .gallery_inner {
+    width: 90%;
+    padding-left: 45px;
+  }
 }
 
 // @media (max-width: 991px) {
@@ -216,4 +224,62 @@
   text-transform: capitalize;
   font-size: 24px;
   letter-spacing: 2px;
+}
+
+// mobile
+.mobile_gallery_container {
+  margin-top: 110px;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile_img_container {
+  height: auto;
+  width: 390px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mobile_image {
+  max-height: 100%;
+  max-width: 100%;
+  opacity: 0.4;
+}
+
+.mobile_item_text {
+  position: inherit;
+}
+
+.mobile_noImage_container {
+  height: 580px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mobile_noImage_underline {
+  margin-top: 2px;
+  border-bottom: 1px solid #D0B783;
+  width: 25%;
+  opacity: 0.5;
+}
+
+.mobile_modal_img {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.mobile_item_text {
+  color: var(--text-dark-gray);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  position: relative;
+  bottom: 185px;
+  height: 0;
 }

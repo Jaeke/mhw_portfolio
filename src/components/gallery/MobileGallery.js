@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { IoCloseOutline } from 'react-icons/io5';
 import { motion, AnimatePresence } from 'framer-motion';
 import { wrap } from 'popmotion';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
+import { IoCloseOutline } from 'react-icons/io5';
 
-import './Gallery.style.scss';
 import { imgData } from './imgData';
 
 const variants = {
@@ -33,7 +32,7 @@ const swipePower = (offset, velocity) => {
   return Math.abs(offset) * velocity;
 };
 
-const Gallery = () => {
+const MobileGallery = () => {
   const [modal, setModal] = useState(false);
   const [tempImgSrc, setTempImgSrc] = useState([]);
 
@@ -52,12 +51,12 @@ const Gallery = () => {
   };
 
   return (
-    <>
+    <div className="mobile_gallery_container">
       <div className={modal ? 'modal open' : 'modal'}>
         <AnimatePresence initial={false} custom={direction}>
           <motion.img
             key={page}
-            className="modal_img"
+            className="mobile_modal_img"
             src={tempImgSrc[imageIndex]}
             custom={direction}
             variants={variants}
@@ -65,7 +64,7 @@ const Gallery = () => {
             animate="center"
             exit="exit"
             transition={{
-              x: { type: 'spring', stiffness: 300, damping: 30 },
+              x: { type: 'tween', stiffness: 300, damping: 30 },
               opacity: { duration: 0.2 },
             }}
             drag="x"
@@ -97,52 +96,38 @@ const Gallery = () => {
           />
         </div>
       </div>
-      <motion.div
-        className="gallery"
-        initial={{ y: '-50px', opacity: 0 }}
-        animate={{
-          y: '0px',
-          x: '0px',
-          opacity: 1,
-        }}
-        transition={{
-          type: 'tween',
-          duration: 1,
-        }}
-      >
-        <div className="gallery_inner">
-          {imgData.map((item, i) => (
-            <div
-              className={`img_container`}
-              key={i}
-              onClick={() => {
-                if (item.imgSrc.length > 1) {
-                  getImg(item.imgSrc);
-                }
-              }}
-            >
-              {item.imgSrc.length > 1 ? (
+      <div className="mobile_gallery_inner">
+        {imgData.map((item, i) => (
+          <div
+            className="mobile_img_container"
+            key={i}
+            onClick={() => {
+              if (item.imgSrc.length > 1) {
+                getImg(item.imgSrc);
+              }
+            }}
+          >
+            {item.imgSrc.length > 1 ? (
+              <>
                 <img
-                  className="image"
+                  className="mobile_image"
                   src={item.imgSrc[0]}
                   alt="individual img"
                 />
-              ) : (
-                <div className="noImage_container">
-                  <span className="noImage_msg">coming soon</span>
-                  <span className="noImage_underline" />
-                </div>
-              )}
-
-              <span key={i} className="img_title">
-                <span className="item_text">{item.group}</span>
-              </span>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-    </>
+                <span className="mobile_item_text">{item.group}</span>
+              </>
+            ) : (
+              <div className="mobile_noImage_container">
+                <span className="noImage_msg">coming soon</span>
+                <span className="mobile_noImage_underline" />
+                <span className="noImage_msg">furniture</span>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 
-export default Gallery;
+export default MobileGallery;

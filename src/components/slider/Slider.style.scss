@@ -11,40 +11,40 @@
   width: 100%;
   height: 100vh;
 
-  @media screen and (min-width: 600px) {
-    //For Tablets
+  // @media screen and (min-width: 600px) {
+  //   //For Tablets
 
-    width: 100;
-  }
+  //   width: 100;
+  // }
 
-  @media screen and (min-width: 768px) {
-    //For Laptops
+  // @media screen and (min-width: 768px) {
+  //   //For Laptops
 
-    width: 738px;
-  }
+  //   width: 738px;
+  // }
 
-  @media screen and (min-width: 992px) {
-    //For Large Laptops
+  // @media screen and (min-width: 992px) {
+  //   //For Large Laptops
 
-    width: 962px;
-  }
+  //   width: 962px;
+  // }
 
-  @media screen and (min-width: 1280px) {
-    //For Big TV's (HD Screens)
+  // @media screen and (min-width: 1280px) {
+  //   //For Big TV's (HD Screens)
+  //   width: 1250px;
+  // }
 
-    width: 1250px;
-  }
+  // @media screen and (min-width: 1920px) {
+  //   //For Projectors or Higher Resolution Screens (Full HD)
+  //   margin-left: 220px;
+  //   width: 1890px;
+  // }
+  // @media screen and (min-width: 3840px) {
+  //   //For 4K Displays (Ultra HD)
 
-  @media screen and (min-width: 1920px) {
-    //For Projectors or Higher Resolution Screens (Full HD)
-    margin-left: 220px;
-    width: 1890px;
-  }
-  @media screen and (min-width: 3840px) {
-    //For 4K Displays (Ultra HD)
-    margin-left: 250px;
-    width: 3810px;
-  }
+  //   margin-left: 250px;
+  //   width: 3810px;
+  // }
 }
 
 .slide {

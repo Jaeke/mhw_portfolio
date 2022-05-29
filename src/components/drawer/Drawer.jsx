@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import cn from 'classnames';
 
@@ -25,6 +25,18 @@ const SideDrawer = ({
   const bodyRef = useRef(document.querySelector('body'));
 
   const isTransitioning = useMountTransition(isOpen, 300);
+
+  // mobile
+  const [width, setWidth] = useState(window.innerWidth);
+
+  const updateWidthAndHeight = () => {
+    setWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', updateWidthAndHeight);
+    return () => window.removeEventListener('resize', updateWidthAndHeight);
+  }, []);
 
   // Append portal root on mount
   useEffect(() => {
@@ -85,7 +97,10 @@ const SideDrawer = ({
         <div className={cn('drawer', position)} role="dialog">
           {children}
         </div>
-        <div className="backdrop" onClick={onClose} />
+        <div
+          className={width > 716 ? 'backdrop' : 'mobile_backdrop'}
+          onClick={onClose}
+        />
       </div>
     </>,
     portalRootRef.current

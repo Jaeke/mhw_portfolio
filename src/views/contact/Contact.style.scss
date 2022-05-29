@@ -24,3 +24,30 @@
   letter-spacing: 2px;
   font-weight: 600;
 }
+
+// mobile
+.mobile_contact_container {
+  background-image: url('../../assets/interiorDesign/interior_1.jpeg');
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mobile_contact_content {
+  background-color: rgba(230, 230, 230, 0.75);
+  color: #c69731;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_underline {
+  border-bottom: 1px solid #D0B783;
+  width: 85%;
+  opacity: 1;
+}
