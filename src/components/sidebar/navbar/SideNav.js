@@ -20,7 +20,7 @@ const SideNav = () => {
   };
 
   useEffect(() => {
-    console.log(height);
+    // console.log(height);
     window.addEventListener('resize', updateWidthAndHeight);
     return () => window.removeEventListener('resize', updateWidthAndHeight);
   }, []);

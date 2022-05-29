@@ -21,7 +21,7 @@ const Sidebar = () => {
 
   // 569 height for horizontal mobile screen
   useEffect(() => {
-    console.log(height);
+    // console.log(height);
     window.addEventListener('resize', updateWidthAndHeight);
     return () => window.removeEventListener('resize', updateWidthAndHeight);
   }, []);
