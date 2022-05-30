@@ -11,7 +11,7 @@ const Email = () => {
 
   const emailIconHandler = () => {
     console.log('email');
-    dispatch(uiActions.setSideDrawerVisible());
+    // dispatch(uiActions.setSideDrawerVisible());
   };
 
   return (
