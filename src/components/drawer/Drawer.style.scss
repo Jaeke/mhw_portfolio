@@ -18,24 +18,29 @@
     padding: 20px;
   }
 
-  @media screen and (max-width: 1200px) {
-    width: 40%;
-  }
-  @media screen and (min-width: 825px) {
-    width: 75%;
-  }
-  @media screen and (max-width: 717px) {
-    width: 40%;
-  }
-  @media screen and (max-height: 414px) {
-    width: 40%;
-  }
-  @media screen and (min-height: 414px) {
-    width: 75%;
-  }
-  @media screen and (max-height: 280px) {
-    width: 75%;
-  }
+  // 34" screen
+
+  // @media screen and (min-width: 1200px) {
+  //   width: 40%;
+  // }
+  // @media screen and (min-width: 825px) {
+  //   width: 75%;
+  // }
+  // @media screen and (min-width: 825px) {
+  //   width: 75%;
+  // }
+  // @media screen and (max-width: 717px) {
+  //   width: 40%;
+  // }
+  // @media screen and (max-height: 414px) {
+  //   width: 40%;
+  // }
+  // @media screen and (min-height: 414px) {
+  //   width: 75%;
+  // }
+  // @media screen and (max-height: 280px) {
+  //   width: 75%;
+  // }
   @media screen and (max-width: 280px) {
     width: 100%;
   }
