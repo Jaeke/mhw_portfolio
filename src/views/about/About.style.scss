@@ -44,6 +44,79 @@
   font-weight: 300;
 }
 
+// new about page layout
+
+.about_page_layout {
+  display: grid;
+  //            col height  / row width
+  grid-template: 200px 1fr / 2fr 1fr;
+  grid-template-areas:
+    'header picture'
+    'content picture';
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Montserrat', sans-serif;
+  color: #D0B783;
+  // background-color: red;
+
+}
+
+// Header ========================
+.about_header {
+  grid-area: header;
+  // background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.header_text {
+  font-size: 46px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: capitalize;
+  // background-color: red;
+}
+
+// Bio Picute ====================
+.about_picture {
+  grid-area: picture;
+  // background-color: blue;
+}
+
+.about_bio_picture {
+  height: 340px;
+  width: 340px;
+  background-color: rgb(83, 83, 83);
+  border-radius: 50%;
+  // background-image: url('../../../public/images/portfolio_pic.PNG');
+  background-position: center;
+  background-size: cover;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322);
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322);
+  -o-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322);
+  position: fixed;
+  top: 10%;
+}
+
+// Bio Content ===================
+.about_content {
+  grid-area: content;
+  // background-color: teal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bio_text {
+  font-size: 28px;
+  font-weight: 300;
+  width: 55%;
+  height: 100%;
+  // background-color: red;
+}
+
 // mobile
 .mobile_about_content {
   font-family: 'Montserrat', sans-serif;
@@ -63,9 +136,6 @@
   letter-spacing: 1px;
   font-weight: 600;
   text-transform: capitalize;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
   margin-bottom: 15px;
 }
 

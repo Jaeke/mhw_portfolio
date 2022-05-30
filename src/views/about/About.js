@@ -19,8 +19,57 @@ const About = () => {
   return (
     <>
       {width > 716 ? (
-        <div className="about_page_container">
+        <div
+          // className="about_page_container"
+          className="about_page_layout"
+        >
           <MenuToggler about={true} />
+          <div className="about_header">
+            <div className="header_text">mark h. wesley</div>
+          </div>
+          <div className="about_picture">
+            <div className="about_bio_picture" />
+          </div>
+          <div className="about_content">
+            <div className="bio_text">
+              <p>
+                Designer Mark Wesley seamlessly blends your vision for your
+                project with interior styling that reflects the feeling you’re
+                looking to create. Understanding the power of storytelling
+                through design, Mark is highly valued for his innate ability to
+                consistently understand that all creative executions result in a
+                new feeling, increased comfort or increased sales.
+              </p>
+
+              <p>
+                Mark’s design career began with lifestyle brands and with his
+                natural talent and refined eye for detail, proportion, and
+                color, he was quickly discovered by fashion house Ralph Lauren.
+              </p>
+
+              <p>
+                Mark’s creative work for Ralph’s men’s, women’s and home lines
+                debuted in hundreds of spaces including high-fashion runways,
+                retail interiors and window designs for premier flagship stores
+                nationwide for over 20 years.
+              </p>
+
+              <p>
+                MHW Studio provides interior design, creative direction,
+                installation projects, custom furniture and lighting design for
+                hospitality, commercial and residential clients.
+              </p>
+
+              <p>
+                Mark believes his job is about making the design process easy
+                for you, with results that feel good. Through his joy for music,
+                travel and learning, he is consistently seeing and refining his
+                eye to see the world in new ways and matching that refined
+                perspective to your project.
+              </p>
+            </div>
+          </div>
+          {/* <MenuToggler about={true} />
           <motion.div
             className="bio_picture"
             initial={{ x: '200px', opacity: 0 }}
@@ -96,7 +145,7 @@ const About = () => {
                 perspective to your project.
               </p>
             </motion.div>
-          </div>
+          </div> */}
         </div>
       ) : (
         <div className="mobile_about_content">
