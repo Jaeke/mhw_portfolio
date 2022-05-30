@@ -25,66 +25,8 @@ const About = () => {
         >
           <MenuToggler about={true} />
           <div className="about_header">
-            <div className="header_text">mark h. wesley</div>
-          </div>
-          <div className="about_picture">
-            <div className="about_bio_picture" />
-          </div>
-          <div className="about_content">
-            <div className="bio_text">
-              <p>
-                Designer Mark Wesley seamlessly blends your vision for your
-                project with interior styling that reflects the feeling you’re
-                looking to create. Understanding the power of storytelling
-                through design, Mark is highly valued for his innate ability to
-                consistently understand that all creative executions result in a
-                new feeling, increased comfort or increased sales.
-              </p>
-
-              <p>
-                Mark’s design career began with lifestyle brands and with his
-                natural talent and refined eye for detail, proportion, and
-                color, he was quickly discovered by fashion house Ralph Lauren.
-              </p>
-
-              <p>
-                Mark’s creative work for Ralph’s men’s, women’s and home lines
-                debuted in hundreds of spaces including high-fashion runways,
-                retail interiors and window designs for premier flagship stores
-                nationwide for over 20 years.
-              </p>
-
-              <p>
-                MHW Studio provides interior design, creative direction,
-                installation projects, custom furniture and lighting design for
-                hospitality, commercial and residential clients.
-              </p>
-
-              <p>
-                Mark believes his job is about making the design process easy
-                for you, with results that feel good. Through his joy for music,
-                travel and learning, he is consistently seeing and refining his
-                eye to see the world in new ways and matching that refined
-                perspective to your project.
-              </p>
-            </div>
-          </div>
-          {/* <MenuToggler about={true} />
-          <motion.div
-            className="bio_picture"
-            initial={{ x: '200px', opacity: 0 }}
-            animate={{
-              x: '0px',
-              opacity: 1,
-            }}
-            transition={{
-              type: 'tween',
-              duration: 1.2,
-            }}
-          />
-          <div className="bio_container">
             <motion.div
-              className="bio_header"
+              className="header_text"
               initial={{ x: '-200px', opacity: 0 }}
               animate={{
                 x: '0px',
@@ -95,10 +37,26 @@ const About = () => {
                 duration: 1.2,
               }}
             >
-              Mark H. Wesley
+              mark h. wesley
             </motion.div>
+          </div>
+          <div className="about_picture">
             <motion.div
-              className="bio_content"
+              className="about_bio_picture"
+              initial={{ x: '200px', opacity: 0 }}
+              animate={{
+                x: '0px',
+                opacity: 1,
+              }}
+              transition={{
+                type: 'tween',
+                duration: 1.2,
+              }}
+            />
+          </div>
+          <div className="about_content">
+            <motion.div
+              className="bio_text"
               initial={{ y: '200px', opacity: 0 }}
               animate={{
                 y: '0px',
@@ -145,7 +103,7 @@ const About = () => {
                 perspective to your project.
               </p>
             </motion.div>
-          </div> */}
+          </div>
         </div>
       ) : (
         <div className="mobile_about_content">
