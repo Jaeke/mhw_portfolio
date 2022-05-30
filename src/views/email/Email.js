@@ -33,9 +33,9 @@ const Email = () => {
           <Formik
             initialValues={{
               name: '',
-              emailFrom: '',
-              emailSubject: '',
-              emailMessage: '',
+              email: '',
+              subject: '',
+              message: '',
             }}
             onSubmit={handleSubmit}
             validationSchema={formValidation}
@@ -52,23 +52,23 @@ const Email = () => {
                   placeholder="enter your name"
                 />
               </Form.Item>
-              <Form.Item name="emailFrom" label="Email Address">
+              <Form.Item name="email" label="Email Address">
                 <Input
-                  name="emailFrom"
+                  name="email"
                   style={{ width: '100%' }}
                   placeholder="enter your email"
                 />
               </Form.Item>
-              <Form.Item name="emailSubject" label="Subject">
+              <Form.Item name="subject" label="Subject">
                 <Input
-                  name="emailSubject"
+                  name="subject"
                   style={{ width: '100%' }}
                   placeholder="enter email subject"
                 />
               </Form.Item>
-              <Form.Item name="emailMessage" label="Message">
+              <Form.Item name="message" label="Message">
                 <Input.TextArea
-                  name="emailMessage"
+                  name="message"
                   style={{ width: '100%', maxHeight: 350, height: 200 }}
                 />
               </Form.Item>
