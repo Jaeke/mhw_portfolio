@@ -76,9 +76,9 @@ const Contact = () => {
               <span className="contact_header">contact</span>
               <span className="contact_underline" />
             </div>
-            <div>Mark@MHWstudio.com</div>
-            <div>(917) 232-9955 </div>
-            <div>New York, NY</div>
+            <div className="header_sub_text">Mark@MHWstudio.com</div>
+            <div className="header_sub_text">(917) 232-9955 </div>
+            <div className="header_sub_text">New York, NY</div>
           </div>
         </motion.div>
       )}
