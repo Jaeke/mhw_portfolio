@@ -34,10 +34,20 @@ const Contact = () => {
             }}
           >
             <div className="contact_body">
-              <span className="contact_header">contact</span>
-              <div>Mark@MHWstudio.com</div>
-              <div>(917) 232-9955 </div>
-              <div>New York, NY</div>
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  marginBottom: 10,
+                }}
+              >
+                <span className="contact_header">contact</span>
+                <span className="contact_underline" />
+              </div>
+              <div className="header_sub_text">Mark@MHWstudio.com</div>
+              <div className="header_sub_text">(917) 232-9955 </div>
+              <div className="header_sub_text">New York, NY</div>
             </div>
           </motion.div>
         </>
