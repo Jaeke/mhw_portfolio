@@ -134,7 +134,11 @@ const Gallery = () => {
                 </div>
               )}
 
-              <span key={i} className="img_title">
+              <span
+                key={i}
+                // className="img_title"
+                className="image_title"
+              >
                 <span className="item_text">{item.group}</span>
               </span>
             </div>

@@ -21,31 +21,6 @@ const Email = () => {
     return () => window.removeEventListener('resize', updateWidthAndHeight);
   }, []);
 
-  // const handleSubmit = (values, actions) => {
-  //   console.log('submitted values: ', values);
-
-  //   emailjs
-  //     .sendForm(
-  //       'service_2uqclhw',
-  //       'template_hc7wad6',
-  //       form.current,
-  //       'WVmExMwMvYninowHR'
-  //     )
-  //     .then(
-  //       (result) => {
-  //         alert('SUCCESS');
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         alert('FAILED');
-  //         console.log(error.text);
-  //       }
-  //     );
-
-  //   actions.setSubmitting(false);
-  //   actions.resetForm();
-  // };
-
   const sendForm = (e) => {
     e.preventDefault();
 

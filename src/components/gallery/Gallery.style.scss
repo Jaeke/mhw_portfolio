@@ -1,8 +1,8 @@
 .gallery {
-  // background-color: blue;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 0 10px 0;
 }
 
 .gallery_inner {
@@ -14,52 +14,57 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  // padding-left: 25px;
-  // background-color: red;
-}
-
-.img_container {
-  position: relative;
-  height: 580px;
-  width: 560px;
 }
 
 .image {
   height: 100%;
   width: 100%;
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.gallery .img_container {
-  -webkit-transition: all 350ms ease;
-  transition: all 350ms ease;
+.img_container {
+  -webkit-transition: opacity transform 0.3s ease;
+  transition: opacity transform 0.3s ease;
   cursor: pointer;
   margin-bottom: 12px;
+  position: relative;
+  height: 580px;
+  width: 560px;
+  overflow: hidden;
 
   &:hover {
     // currently comment out because it is behaving weirdly
-    // filter: opacity(0.7);
+    .image {
+      opacity: 0.5;
+      transform: scale(1.2);
+    }
 
-    .img_title {
+    .image_title {
       transform: translateX(0);
       opacity: 1;
     }
   }
 }
 
-.img_title {
-  position: relative;
+.image_title {
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+  width: 200px;
+  padding: 5px;
   display: inline-flex;
   background-color: rgba(72, 74, 77, 0.75);
-  right: -360px;
-  width: 200px;
-  bottom: 40px;
   justify-content: center;
   transform: translateX(100%);
   opacity: 0;
   transition: all 0.4s ease-in-out;
 }
+
 
 .item_text {
   color: #D0B783;
@@ -75,25 +80,6 @@
     padding-left: 45px;
   }
 }
-
-// @media (max-width: 991px) {
-//   .gallery {
-//     -webkit-column-count: 2;
-//     -moz-column-count: 2;
-//     column-count: 2;
-//   }
-// }
-
-// @media (max-width: 480px) {
-//   .gallery {
-//     -webkit-column-count: 1;
-//     -moz-column-count: 1;
-//     column-count: 1;
-//     -webkit-column-width: 100%;
-//     -moz-column-width: 100%;
-//     column-width: 100%;
-//   }
-// }
 
 // modal
 .modal {
