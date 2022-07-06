@@ -41,7 +41,7 @@ const Email = () => {
       <div className="email_content_container">
         {width > 716 ? <MenuToggler /> : ''}
         <div className="email_form_container">
-          <span className="form_header">connect with me</span>
+          <span className="form_header">connect with us</span>
           <form ref={form} onSubmit={sendForm}>
             {/* <!-- name --> */}
             <div className="form-group">
