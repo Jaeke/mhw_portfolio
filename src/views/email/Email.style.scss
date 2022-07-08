@@ -1,3 +1,18 @@
+@keyframes error-mounting {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .email_content_container {
   width: 100vw;
   height: 100vh;
@@ -53,6 +68,38 @@
   }
 }
 
+.form_field {
+  display: flex;
+  flex-direction: column;
+  height: 65px;
+}
+
+.form_field_textarea {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.field_input {
+  border-radius: 3px;
+  border: 1px solid #c9d1d9;
+  outline: none;
+  transition: all 0.1s ease-in;
+  padding-left: 10px;
+
+  &:focus {
+    border: 1px solid #24a0ed;
+  }
+}
+
+.field_textarea {
+  min-height: 134px;
+  max-height: 616px;
+}
+
+.input_error {
+  border: 1px solid #d62828;
+}
 
 .email_form {
   width: 100%;
@@ -83,4 +130,11 @@
 .form_btn_section {
   display: flex;
   justify-content: flex-end;
+}
+
+// form error message
+.field_err_msg {
+  color: #d62828;
+  padding-left: 10px;
+  animation: error-mounting 0.4s ease-in;
 }
