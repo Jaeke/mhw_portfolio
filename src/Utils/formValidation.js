@@ -6,9 +6,7 @@ export const emailRegex =
 
 export const formValidation = Yup.object().shape({
   name: Yup.string().required('Required'),
-  email: Yup.string()
-    .matches(emailRegex, 'invalid format must include "@" and ".com"')
-    .required('Required'),
+  email: Yup.string().email().required('Required'),
   subject: Yup.string().required('Required'),
   message: Yup.string().required('Required'),
 });

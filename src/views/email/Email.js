@@ -52,7 +52,7 @@ const Email = () => {
                 name="name"
                 className="form-control"
                 id="name"
-                placeholder="enter your name"
+                // placeholder="please enter your full name"
               />
             </div>
 
@@ -64,7 +64,7 @@ const Email = () => {
                 name="email"
                 className="form-control"
                 id="email"
-                placeholder="enter your email"
+                // placeholder="enter your email"
               />
             </div>
 
@@ -76,7 +76,7 @@ const Email = () => {
                 name="subject"
                 className="form-control"
                 id="subject"
-                placeholder="enter email subject"
+                // placeholder="enter email subject"
               />
             </div>
 
@@ -88,7 +88,7 @@ const Email = () => {
                 name="message"
                 rows="5"
                 style={{ minHeight: 134, maxHeight: 616 }}
-              ></textarea>
+              />
             </div>
 
             <div className="form_btn_section">

@@ -38,7 +38,6 @@
   overflow: hidden;
 
   &:hover {
-    // currently comment out because it is behaving weirdly
     .image {
       opacity: 0.5;
       transform: scale(1.2);
