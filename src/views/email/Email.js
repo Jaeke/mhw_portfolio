@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser';
 import './Email.style.scss';
 import { MenuToggler } from '../../components';
 import { formValidation } from '../../Utils/formValidation';
+import { serviceId, templateId, userId } from '../../api';
 
 const Email = () => {
   const form = useRef();
