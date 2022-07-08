@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Formik, Form } from 'formik';
-import { FormikDebug, Input, SubmitButton } from 'formik-antd';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 
@@ -54,7 +53,7 @@ const Email = () => {
       <div className="email_content_container">
         {width > 716 ? <MenuToggler /> : ''}
         <div className="email_form_container">
-          <span className="form_header">connect with us</span>
+          <span className="form_header">connect with me</span>
           <Formik
             initialValues={{
               name: '',
@@ -74,7 +73,6 @@ const Email = () => {
                 onReset={props.handleReset}
                 onSubmit={props.handleSubmit}
               >
-                <FormikDebug />
                 {/* <!-- name --> */}
                 <div className="form_field">
                   <label htmlFor="name">Name</label>
