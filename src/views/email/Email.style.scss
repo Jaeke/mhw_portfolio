@@ -1,7 +1,7 @@
 @keyframes error-mounting {
   0% {
     transform: translateY(-10px);
-    opacity: 0.5;
+    opacity: 0;
   }
   50% {
     transform: translateY(0);
@@ -71,7 +71,7 @@
 .form_field {
   display: flex;
   flex-direction: column;
-  height: 65px;
+  height: 75px;
 }
 
 .form_field_textarea {
