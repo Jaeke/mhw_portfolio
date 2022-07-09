@@ -3,10 +3,15 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci
+        - echo $PWD
+        - npm install
     build:
       commands:
-        - npm run build
+        - echo "REACT_APP_SERVICE_ID=$REACT_APP_SERVICE_ID" >> .env
+        - echo "REACT_APP_TEMPLATE_ID=$REACT_APP_TEMPLATE_ID" >> .env
+        - echo "REACT_APP_USER_ID=$REACT_APP_USER_ID" >> .env
+        - echo "I am running 🏃 mhw_client"
+        - npm run-script build
   artifacts:
     baseDirectory: build
     files:
