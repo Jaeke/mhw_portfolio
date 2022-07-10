@@ -57,10 +57,12 @@
   .nav_text {
     color: var(--text-slate-gray);
     padding-left: 40px;
-    transition: color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   &:hover {
+    text-decoration: none;
+
     .nav_text {
       color: #d0b783;
     }
