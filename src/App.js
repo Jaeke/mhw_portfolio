@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import 'antd/dist/antd.css';
 
 import Routes from './routes';
 import { uiActions } from './store/UI/ui-slice';
