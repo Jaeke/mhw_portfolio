@@ -1,7 +1,12 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import { About, Home, Projects, Contact, Email } from './views';
+// import { About, Home, Projects, Contact, Email } from './views';
+import About from './views/about/About';
+import Home from './views/home/Home';
+import Projects from './views/gallery/Projects';
+import Contact from './views/contact/Contact';
+import Email from './views/email/Email';
 
 const appRoutes = () => {
   return (
