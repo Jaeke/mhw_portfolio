@@ -7,7 +7,7 @@ import {
   ProjectsPage,
   ContactPage,
   EmailPage,
-} from './views';
+} from './Views';
 
 const appRoutes = () => {
   return (
