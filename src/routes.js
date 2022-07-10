@@ -12,8 +12,8 @@ import {
 const appRoutes = () => {
   return (
     <Routes>
-      <Route exact path="/" element={<HomePage />} />
-      <Route exact path="/home" element={<HomePage />} />
+      {/* <Route exact path="/" element={<HomePage />} />
+      <Route exact path="/home" element={<HomePage />} /> */}
       <Route path="/about" element={<AboutPage />} />
       <Route path="/gallery" element={<ProjectsPage />} />
       <Route path="/contact" element={<ContactPage />} />
