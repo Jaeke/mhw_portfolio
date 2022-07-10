@@ -33,7 +33,7 @@ const swipePower = (offset, velocity) => {
   return Math.abs(offset) * velocity;
 };
 
-const Home = () => {
+const HomePage = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
   const [[page, direction], setPage] = useState([0, 0]);
@@ -106,4 +106,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

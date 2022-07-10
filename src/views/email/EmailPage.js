@@ -13,7 +13,7 @@ import { serviceId, templateId, userId } from '../../api';
 const errorNotify = (msg) => toast.error(msg);
 const successNotify = (msg) => toast.success(msg);
 
-const Email = () => {
+const EmailPage = () => {
   const form = useRef();
 
   const [width, setWidth] = useState(window.innerWidth);
@@ -170,4 +170,4 @@ const Email = () => {
   );
 };
 
-export default Email;
+export default EmailPage;

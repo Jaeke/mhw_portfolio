@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { MenuToggler } from '../../components';
 import './Contact.style.scss';
 
-const Contact = () => {
+const ContactPage = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
   const updateWidthAndHeight = () => {
@@ -86,4 +86,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { MenuToggler } from '../../components';
 import './About.style.scss';
 
-const About = () => {
+const AboutPage = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
   const updateWidthAndHeight = () => {
@@ -187,4 +187,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;

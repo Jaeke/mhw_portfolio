@@ -1,7 +1,7 @@
-import Home from './home/HomePage';
-import About from './about/AboutPage';
-import Projects from './gallery/ProjectsPage';
-import Contact from './contact/ContactPage';
-import Email from './email/EmailPage';
+import HomePage from './home/HomePage';
+import AboutPage from './about/AboutPage';
+import ProjectsPage from './gallery/ProjectsPage';
+import ContactPage from './contact/ContactPage';
+import EmailPage from './email/EmailPage';
 
-export { Home, About, Projects, Contact, Email };
+export { HomePage, AboutPage, ProjectsPage, ContactPage, EmailPage };

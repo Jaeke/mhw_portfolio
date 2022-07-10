@@ -1,17 +1,23 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import { About, Home, Projects, Contact, Email } from './views';
+import {
+  AboutPage,
+  HomePage,
+  ProjectsPage,
+  ContactPage,
+  EmailPage,
+} from './views';
 
 const appRoutes = () => {
   return (
     <Routes>
-      <Route exact path="/" element={<Home />} />
-      <Route exact path="/home" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/gallery" element={<Projects />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/email" element={<Email />} />
+      <Route exact path="/" element={<HomePage />} />
+      <Route exact path="/home" element={<HomePage />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/gallery" element={<ProjectsPage />} />
+      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/email" element={<EmailPage />} />
     </Routes>
   );
 };

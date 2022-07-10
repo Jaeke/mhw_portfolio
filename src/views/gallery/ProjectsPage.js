@@ -5,7 +5,7 @@ import { MenuToggler } from '../../components';
 import Gallery from '../../components/gallery';
 import MobileGallery from '../../components/gallery/MobileGallery';
 
-const Projects = () => {
+const ProjectsPage = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
   const updateWidthAndHeight = () => {
@@ -33,4 +33,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectsPage;
