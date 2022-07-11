@@ -5,7 +5,7 @@ import AboutPage from './views/about/AboutPage';
 import ProjectsPage from './views/gallery/ProjectsPage';
 import ContactPage from './views/contact/ContactPage';
 import EmailPage from './views/email/EmailPage';
-import HomePage from './views/home/HomePage';
+import HomePage from './views/homePage/HomePage';
 
 const appRoutes = () => {
   return (
