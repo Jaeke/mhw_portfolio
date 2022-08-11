@@ -3,23 +3,14 @@ frontend:
   phases:
     preBuild:
       commands:
-        - echo $PWD
-        - cd src
-        - ls
-        - cd ..
-        - yarn install
+        - npm ci
     build:
       commands:
-        # - yarn run build
-        - echo "REACT_APP_SERVICE_ID=$REACT_APP_SERVICE_ID" >> .env
-        - echo "REACT_APP_TEMPLATE_ID=$REACT_APP_TEMPLATE_ID" >> .env
-        - echo "REACT_APP_USER_ID=$REACT_APP_USER_ID" >> .env
-        - echo "I am running 🏃 dd-core client"
-        - npm run-script build
+        - npm run build
   artifacts:
     baseDirectory: build
     files:
-      - '*/*'
+      - '**/*'
   cache:
     paths:
-      - node_modules/*/*
+      - node_modules/**/*
