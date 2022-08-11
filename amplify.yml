@@ -10,7 +10,7 @@ frontend:
         - yarn install
     build:
       commands:
-        - yarn run build
+        # - yarn run build
         - echo "REACT_APP_SERVICE_ID=$REACT_APP_SERVICE_ID" >> .env
         - echo "REACT_APP_TEMPLATE_ID=$REACT_APP_TEMPLATE_ID" >> .env
         - echo "REACT_APP_USER_ID=$REACT_APP_USER_ID" >> .env
