@@ -4,10 +4,11 @@ frontend:
     preBuild:
       commands:
         - cd src
+        - cd ..
         - npm install
     build:
       commands:
-        - npm run build
+        - npm run-script build
   artifacts:
     baseDirectory: build
     files:
