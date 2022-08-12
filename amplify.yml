@@ -3,9 +3,11 @@ frontend:
   phases:
     preBuild:
       commands:
+        - echo $PWD
         - cd src
+        - ls
         - cd ..
-        - npm install
+        - yarn install
     build:
       commands:
         - npm run-script build
