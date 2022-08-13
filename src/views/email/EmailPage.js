@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Formik, Form } from 'formik';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 
 import './Email.style.scss';
 import { MenuToggler } from '../../components';
@@ -15,6 +16,7 @@ const successNotify = (msg) => toast.success(msg);
 
 const EmailPage = () => {
   const form = useRef();
+  const navigate = useNavigate();
 
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -27,9 +29,10 @@ const EmailPage = () => {
     return () => window.removeEventListener('resize', updateWidthAndHeight);
   }, []);
 
-  const sendForm = () => {
-    emailjs.sendForm(serviceId, templateId, form.current, userId).then(
+  const sendForm = async () => {
+    await emailjs.sendForm(serviceId, templateId, form.current, userId).then(
       (result) => {
+        navigate('/home');
         successNotify('Your email has been send');
       },
       (error) => {
@@ -64,6 +67,14 @@ const EmailPage = () => {
             onSubmit={(values, actions) => {
               actions.setSubmitting(true);
               sendForm(values);
+              actions.resetForm({
+                values: {
+                  name: '',
+                  email: '',
+                  subject: '',
+                  message: '',
+                },
+              });
             }}
             validationSchema={formValidation}
           >
@@ -158,7 +169,7 @@ const EmailPage = () => {
 
                 <div className="form_btn_section">
                   <button type="submit" className="btn btn-primary">
-                    Submit
+                    Send
                   </button>
                 </div>
               </Form>

@@ -71,7 +71,7 @@
 .form_field {
   display: flex;
   flex-direction: column;
-  height: 75px;
+  height: 85px;
 }
 
 .form_field_textarea {
@@ -86,6 +86,8 @@
   outline: none;
   transition: all 0.1s ease-in;
   padding-left: 10px;
+  height: 30px;
+  font-family: 'Montserrat', sans-serif;
 
   &:focus {
     border: 1px solid #24a0ed;
@@ -93,6 +95,8 @@
 }
 
 .field_textarea {
+  min-width: 100%;
+  max-width: 100%;
   min-height: 134px;
   max-height: 616px;
 }
@@ -117,9 +121,14 @@
 }
 
 .btn-primary {
-  background-color: #7d7d7d;
+  background-color: var(--text-light-gray);
   border: solid 1px #cccccc;
+  color: var(--color-cream);
   transition: all 0.4s ease;
+  padding: 5px;
+  border-radius: 3px;
+  width: 90px;
+  font-size: 14px;
 
   &:hover {
     background-color: #D0B783;
