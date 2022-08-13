@@ -67,14 +67,6 @@ const EmailPage = () => {
             onSubmit={(values, actions) => {
               actions.setSubmitting(true);
               sendForm(values);
-              actions.resetForm({
-                values: {
-                  name: '',
-                  email: '',
-                  subject: '',
-                  message: '',
-                },
-              });
             }}
             validationSchema={formValidation}
           >
